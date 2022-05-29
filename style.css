@@ -1,0 +1,78 @@
+html{
+    width: 100%;
+}
+body{
+    font-family: "Catamaran", sans-serif;
+    width: 100%;
+    margin: 0px;
+    background-color: #e1e2e2;
+}
+.navbar{
+    color: #e1e2e2;
+    font-weight: 600;
+    background-color: #1d2228;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+.header-img{
+    background-image: url(assets/header_img.png);
+    background-size: 100vw;
+    font-weight: 700;
+    color: #e1e2e2;
+    font-size: 36pt;
+}
+.main-content{
+    text-align: justify;
+}
+
+@media screen and (min-width: 1640px){
+    .header-img{
+        background-image: url(assets/header_img_1.png);
+    }
+    .main-content{
+        width: 60%;
+    }
+}
+@media screen and (min-width: 721px){
+    .navbar{
+        padding: 20px 40px 20px 40px;
+        font-size: 16pt;
+    }
+    #logo{
+        height: 30px;
+    }
+    .header-img{
+        font-size: 40pt;
+        padding: 100px;
+    }
+    .main-content{
+        width: 70%;
+        padding: 50px;
+        font-size: 16pt;
+        line-height: 50px;
+    }
+}
+@media screen and (max-width: 720px){
+    .navbar{
+        padding: 10px 20px 10px 20px;
+        height: 30px;
+        font-size: 11pt;
+    }
+    #logo{
+        height: 15px;
+        vertical-align: middle;
+    }
+    .header-img{
+        font-size: 18pt;
+        padding: 30px;
+        background-image: url(assets/header_img.png);
+    }
+    .main-content{
+        width: 90%;
+        padding: 20px;
+        font-size: 13pt;
+        line-height: 30px;
+    }
+}
