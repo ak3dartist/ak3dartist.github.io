@@ -33,6 +33,37 @@ body{
     position: sticky;
     top: 0px;
 }
+.sidenav{
+    font-family: 'open_sanssemibold',sans-serif;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #1d2228;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav .close-button{
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 24pt;
+    margin-left: 50px;
+}
+.sidenav a{
+    padding: 32px 8px 8px 30px;
+    text-decoration: none;
+    font-size: 16pt;
+    color: #e1e2e2;
+    display: block;
+    transition: 0.2s;
+}
+.sidenav a:hover{
+    color: #fb8122;
+}
 .header-img{
     background-image: url(assets/header_img.png);
     background-size: 100vw;
@@ -147,6 +178,16 @@ body{
         height: 40px;
         font-size: 11pt;
     }
+    .sidenav{
+        max-width: 240px;
+    }
+    .sidenav .close-button{
+        font-size: 18pt;
+    }
+    .sidenav a{
+        padding: 20px 8px 8px 30px;
+        font-size: 13pt;
+    }
     #logo{
         height: 15px;
         vertical-align: middle;
@@ -194,7 +235,14 @@ body{
     }
 }
 @media screen and (max-width: 360px){
-    #navbar-buttons{
-        visibility: hidden;
+    .sidenav .close-button{
+        font-size: 14pt;
+    }
+    .sidenav a{
+        padding: 10px 4px 4px 15px;
+        font-size: 10pt;
+    }
+    .sidenav{
+        max-width: 100px;
     }
 }
