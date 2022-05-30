@@ -95,6 +95,9 @@ body{
     background-color: #1d2228;
     margin: 10px;
 }
+.button:hover{
+    opacity: 80%;
+}
 .footer{
     display: flex;
     align-items: center;
@@ -118,6 +121,10 @@ body{
 }
 .contact-links>div{
     padding: 5px;
+}
+.links:hover{
+    transition: 0.3s;
+    color: #fb8122;
 }
 @media screen and (min-width: 1640px){
     .header-img{
@@ -239,10 +246,10 @@ body{
         font-size: 14pt;
     }
     .sidenav a{
-        padding: 10px 4px 4px 15px;
-        font-size: 10pt;
+        padding: 12px 6px 6px 18px;
+        font-size: 12pt;
     }
     .sidenav{
-        max-width: 100px;
+        max-width: 150px;
     }
 }
