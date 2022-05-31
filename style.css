@@ -85,7 +85,7 @@ body{
 .works-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
 }
 .button{
     font-family: 'open_sanssemibold',sans-serif;
@@ -126,6 +126,20 @@ body{
     transition: 0.3s;
     color: #fb8122;
 }
+.main-heading{
+    font-family: 'open_sansbold',sans-serif;
+    color: #fb8122;
+    text-transform: uppercase;
+    text-align: left;
+}
+.sub-heading{
+       font-family: 'open_sanssemibold',sans-serif; 
+}
+.content-text{
+    font-family: 'open_sansregular',sans-serif;
+    color: #1d2228;
+    text-align: justify;
+}
 @media screen and (min-width: 1640px){
     .header-img{
         background-image: url(assets/header_img_1.png);
@@ -145,21 +159,23 @@ body{
     .header-img{
         font-size: 40pt;
         padding: 100px;
+        margin-bottom: 20px;
     }
     .main-content{
         width: 70%;
-        padding: 50px;
+        padding: 20px;
         font-size: 16pt;
         line-height: 50px;
     }
     .heading{
         width: 70%;
         font-size: 22pt;
+        padding: 20px;
     }
     .works-container{
         flex-flow: row;
         flex-wrap: wrap;
-        padding-top: 60px;
+        padding-top: 30px;
         width: 70%;
     }
     .work-element>img{
@@ -177,6 +193,22 @@ body{
     }
     .contact-links{
         width: 600px;
+    }
+    #about-heading{
+        font-size: 24pt;
+    }
+    .work-element{
+        width: 600px;
+        padding: 0px 20px 0px 20px;
+    }
+    .main-heading{
+        font-size: 22pt;
+        padding: 15px;
+    }
+    .content-text{
+        font-size: 16pt;
+        padding: 15px;
+        line-height: 50px;
     }
 }
 @media screen and (max-width: 720px){
@@ -202,6 +234,7 @@ body{
     .header-img{
         font-size: 18pt;
         padding: 30px;
+        margin-bottom: 20px;
         background-image: url(assets/header_img.png);
     }
     .main-content{
@@ -215,10 +248,12 @@ body{
     .heading{
         width: 90%;
         font-size: 16pt;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .works-container{
         flex-flow: column;
-        padding-top: 20px;
+        padding-top: 10px;
     }
     .work-element>img{
         width: 90%;
@@ -239,6 +274,21 @@ body{
     }
     .contact-links{
         flex-wrap: wrap;
+    }
+    #about-heading{
+        font-size: 12pt;
+    }
+    .work-element{
+        width: 100%;
+    }
+    .main-heading{
+        font-size: 16pt;
+        padding: 10px 20px 10px 20px;
+    }
+    .content-text{
+        font-size: 12pt;
+        line-height: 30px;
+        padding: 10px 20px 10px 20px;
     }
 }
 @media screen and (max-width: 360px){
