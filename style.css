@@ -181,7 +181,7 @@ body{
     .works-container{
         flex-flow: row;
         flex-wrap: wrap;
-        padding-top: 30px;
+        padding: 20px 0px 20px 0px;
         width: 70%;
     }
     .work-element>img{
@@ -259,7 +259,7 @@ body{
     }
     .works-container{
         flex-flow: column;
-        padding-top: 10px;
+        padding: 10px 0px 10px 0px;
     }
     .work-element>img{
         width: 90%;
