@@ -13,6 +13,15 @@
         function openNav(){
             document.getElementById('sidenav_0').style.width = "300px";
         }
+        function feedbackForm(){
+            var name = document.getElementById('Name').value;
+            var sub = document.getElementById('Subject').value;
+            var com = document.getElementById('Comment').value;
+            if(sub != "" && com != "")
+            {
+                window.open("mailto:s.arunkumar.bu@gmail.com?&subject=Feedback from the Website&body=Name : "+name+"%0ASubject : "+sub+"%0AComment : "+com);
+            }
+        }
     </script>
     <body>
         <link href="style.css" type="text/css" rel="stylesheet">
@@ -27,19 +36,19 @@
             <div><img src="assets/logo_main.png" id="logo"></div>
             <span style="font-size: 26px; cursor:pointer" onclick="openNav();">&#9776</span>
         </div>
-        <div class="header-img"><a style="color: #fb8122">Connect</a><br>with me</div>
+        <div class="header-img"><span style="color: #fb8122">Thank You</span><br>for visiting</div>
         <center>
             <div class="heading"><span class="heading-style">Contact Me</span></div>
             <div class="contact-container">
                 <div class="form-content">
-                    <form method="post" action="mailto: s.arunkumar.bu@gmail.com? &subject= Feedback for your Website" enctype="text/plain">
+                    <form onsubmit="return false">
                         <div class="form-label">Name :</div>
-                        <center><input type="text" placeholder="Your Name" name="Name "></center>
+                        <center><input type="text" placeholder="Your Name" id="Name" required></center>
                         <div class="form-label">Subject :</div>
-                        <center><input type="text" placeholder="Subject" name="Subject "></center>
-                        <div class="form-label">Message :</div>
-                        <center><textarea placeholder="Body of the Message" rows="5" name="Comment "></textarea></center>
-                        <center><input type="submit" value="Send"></center>
+                        <center><input type="text" placeholder="Subject" id="Subject" required></center>
+                        <div class="form-label">Comment :</div>
+                        <center><textarea placeholder="Body of the Message" rows="5" id="Comment" required></textarea></center>
+                        <center><input type="submit" value="Send" onclick="feedbackForm();"></center>
                     </form>
                 </div>
                 <div><img src="/assets/contact.svg" style="padding: 15px;" id="contact-img"></div>
@@ -52,6 +61,7 @@
                 <div class="links">E Mail</div>
                 <div class="links">Instagram</div>
             </div>
+            <div><a href="https://www.freepik.com" target="_blank" style="color: #e1e2e2; text-decoration: none; font-size: small;">Image designed by Freepik</a></div>
         </div>
     </body>
 </html>
