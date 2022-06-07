@@ -70,12 +70,36 @@ body{
 .sidenav a:hover{
     color: #fb8122;
 }
+.about-header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(assets/header_img.jpg);
+    background-size: cover;
+    font-family: 'open_sanssemibold', sans-serif;
+    color: #e1e2e2;
+}
+.profile{
+    border-radius: 100%;
+}
+#about-heading{
+    color: #fb8122;
+}
 .header-img{
     background-image: url(assets/header_img.jpg);
     background-size: cover;
-    font-family: 'open_sansbold', sans-serif;
+    font-family: 'open_sanssemibold', sans-serif;
     color: #e1e2e2;
-    font-size: 36pt;
+}
+.quote{
+    font-family: 'open_sanssemibold', sans-serif;
+    text-align: center;
+}
+.quote-author{
+    font-family: 'OpenSans-Regular-webfont',sans-serif;
+    color: #fb8122;
+    text-align: right;
 }
 .main-content{
     font-family: 'open_sansregular';
@@ -210,10 +234,26 @@ input[type=submit]:hover{
     #logo{
         height: 30px;
     }
-    .header-img{
-        font-size: 40pt;
-        padding: 100px;
+    .about-header{
+        font-size: 30pt;
+        padding: 100px 100px 70px 100px;
         margin-bottom: 20px;
+    }
+    .profile{
+        width: 150px;
+    }
+    .header-img{
+        font-size: 30pt;
+        padding: 100px 100px 70px 100px;
+        margin-bottom: 20px;
+    }
+    .quote-author{
+        font-size: 18pt;
+        padding: 20px 0px 20px 0px;
+    }
+    .header-content{
+        font-size: 20pt;
+        padding-top: 30px;
     }
     .main-content{
         width: 70%;
@@ -230,7 +270,7 @@ input[type=submit]:hover{
         flex-flow: row;
         flex-wrap: wrap;
         padding: 20px 0px 20px 0px;
-        width: 90%;
+        width: 80%;
     }
     .work-element>img{
         width: 550px;
@@ -249,7 +289,7 @@ input[type=submit]:hover{
         width: 600px;
     }
     #about-heading{
-        font-size: 24pt;
+        font-size: 22pt;
     }
     .work-element{
         width: 600px;
@@ -304,11 +344,28 @@ input[type=submit]:hover{
         height: 15px;
         vertical-align: middle;
     }
+    .about-header{
+        font-size: 16pt;
+        padding: 30px 10px 30px 10px;
+        margin-bottom: 20px;
+        background-image: url(assets/header_img.jpg);
+    }
+    .profile{
+        width: 80px;
+    }
     .header-img{
         font-size: 18pt;
         padding: 30px;
         margin-bottom: 20px;
         background-image: url(assets/header_img.jpg);
+    }
+    .quote-author{
+        font-size: 13pt;
+        padding: 15px 0px 15px 0px;
+    }
+    .header-content{
+        font-size: 13pt;
+        padding-top: 15px;
     }
     .main-content{
         width: 90%;
