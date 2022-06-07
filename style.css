@@ -71,8 +71,8 @@ body{
     color: #fb8122;
 }
 .header-img{
-    background-image: url(assets/header_img.png);
-    background-size: 100vw;
+    background-image: url(assets/header_img.jpg);
+    background-size: cover;
     font-family: 'open_sansbold', sans-serif;
     color: #e1e2e2;
     font-size: 36pt;
@@ -134,7 +134,11 @@ body{
 .contact-links>div{
     padding: 5px;
 }
-.links:hover{
+.links>a{
+    text-decoration: none;
+    color: #e1e2e2;
+}
+.links>a:hover{
     transition: 0.3s;
     color: #fb8122;
 }
@@ -194,9 +198,6 @@ input[type=submit]:hover{
     flex-wrap: wrap-reverse;
 }
 @media screen and (min-width: 1640px){
-    .header-img{
-        background-image: url(assets/header_img_1.png);
-    }
     .main-content{
         width: 60%;
     }
@@ -229,7 +230,7 @@ input[type=submit]:hover{
         flex-flow: row;
         flex-wrap: wrap;
         padding: 20px 0px 20px 0px;
-        width: 70%;
+        width: 90%;
     }
     .work-element>img{
         width: 550px;
@@ -307,7 +308,7 @@ input[type=submit]:hover{
         font-size: 18pt;
         padding: 30px;
         margin-bottom: 20px;
-        background-image: url(assets/header_img.png);
+        background-image: url(assets/header_img.jpg);
     }
     .main-content{
         width: 90%;
