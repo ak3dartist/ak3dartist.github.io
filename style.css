@@ -206,6 +206,9 @@ input[type=submit]:hover{
     line-height: 35px;
     margin-bottom: 0px;
 }
+.footer-contact-links>a{
+    display: inline-block;
+}
 .credits{
     font-family: 'opensans_semibold',sans-serif;
     text-align: center;
@@ -340,8 +343,10 @@ li>a:hover{
         padding-left: 20px;
     }
     .footer-contact-links>a>img{
-        margin: 20px;
         width: 30px;
+    }
+    .footer-contact-links>a{
+        margin: 20px;
     }
     .credits{
         padding-bottom: 20px;
@@ -489,8 +494,10 @@ li>a:hover{
         line-height: 25px;
     }
     .footer-contact-links>a>img{
-        margin: 15px 10px 10px 10px;
         width: 20px;
+    }
+    .footer-contact-links>a{
+        margin: 10px;
     }
     .credits{
         padding-bottom: 20px;
