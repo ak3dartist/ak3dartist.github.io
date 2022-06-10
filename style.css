@@ -515,4 +515,7 @@ li>a:hover{
     .sidenav{
         max-width: 150px;
     }
+    .footer :nth-child(1){order: 1;}
+    .footer :nth-child(3){order: 1;}
+    .footer :nth-child(2){order: 2;}
 }
