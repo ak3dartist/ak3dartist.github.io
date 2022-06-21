@@ -32,13 +32,14 @@ body{
     justify-content: space-between;
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 .sidenav{
     font-family: 'open_sanssemibold',sans-serif;
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     right: 0;
     background-color: #1d2228;
@@ -122,6 +123,26 @@ body{
     display: flex;
     justify-content: center;
     align-items: top;
+}
+.overlay-container>img{
+    display: block;
+}
+.overlay-container{
+    position: relative;
+}
+.image-overlay{
+    box-sizing: border-box;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #e1e2e2;
+    transition: 0.4s;
+    opacity: 0;
+    text-align: justify;
+    font-family: 'opensansregular',sans-serif;
+    bottom: 0;
+}
+.work-element:hover .image-overlay{
+    opacity: 1;
 }
 .button{
     font-family: 'open_sanssemibold',sans-serif;
@@ -230,7 +251,7 @@ li>a:hover{
         width: 60%;
     }
 }
-@media screen and (min-width: 721px){
+@media print, screen and (min-width: 721px){
     .navbar{
         padding: 20px 40px 20px 40px;
         font-size: 16pt;
@@ -274,17 +295,28 @@ li>a:hover{
         flex-flow: row;
         flex-wrap: wrap;
         padding: 20px 0px 20px 0px;
-        width: 85%;
+        width: 90%;
     }
-    .work-element>img{
+    .overlay-container>img{
         width: 550px;
-        padding: 20px;
-        border-radius: 30px;
+        border-radius: 15px;
     }
-    .work-element>video{
+    .overlay-container>video{
         width: 550px;
+        border-radius: 15px;
+    }
+    .image-overlay{
         padding: 20px;
-        border-radius: 30px;
+        font-size: 14pt;
+        width: 100%;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .work-element{
+        padding: 20px;
+    }
+    .work-element-about{
+        width: 600px;
+        padding: 20px;
     }
     .button{
         padding: 10px 20px 10px 20px;
@@ -293,10 +325,6 @@ li>a:hover{
     }
     #about-heading{
         font-size: 22pt;
-    }
-    .work-element{
-        width: 600px;
-        padding: 0px 20px 0px 20px;
     }
     .main-heading{
         font-size: 22pt;
@@ -417,15 +445,25 @@ li>a:hover{
         flex-flow: column;
         padding: 10px 0px 10px 0px;
     }
-    .work-element>img{
-        width: 90%;
-        padding: 10px;
-        border-radius: 20px;
+    .overlay-container>img{
+        width: 100%;
+        border-radius: 10px;
     }
-    .work-element>video{
-        width: 90%;
+    .overlay-container>video{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .image-overlay{
+        padding: 15px;
+        font-size: 12pt;
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .work-element{
         padding: 10px;
-        border-radius: 20px;
+    }
+    .work-element-about{
+        padding: 5px 0px 5px 0px;
     }
     .button{
         padding: 8px 16px 8px 16px;
@@ -434,9 +472,6 @@ li>a:hover{
     }
     #about-heading{
         font-size: 12pt;
-    }
-    .work-element{
-        width: 100%;
     }
     .main-heading{
         font-size: 16pt;
