@@ -1,18 +1,20 @@
 @font-face {
-    font-family: 'open_sansregular';
-    src: url('/OpenSans-Regular-webfont.woff') format('woff');
+    font-family: 'metropolisbold';
+    src: url('metropolis-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'open_sansbold';
-    src: url('/OpenSans-Bold-webfont.woff') format('woff');
+    font-family: 'metropolisregular';
+    src: url('metropolis-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'open_sanssemibold';
-    src: url('/OpenSans-Semibold-webfont.woff') format('woff');
+    font-family: 'metropolissemi_bold';
+    src: url('metropolis-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 html{
     width: 100%;
@@ -24,7 +26,7 @@ body{
 }
 .navbar{
     color: #e1e2e2;
-    font-family: 'open_sanssemibold', sans-serif;
+    font-family: 'metropolissemi_bold', sans-serif;
     background-color: #1d2228;
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +37,7 @@ body{
     z-index: 1;
 }
 .sidenav{
-    font-family: 'open_sanssemibold',sans-serif;
+    font-family: 'metropolissemi_bold',sans-serif;
     height: 100%;
     width: 0;
     position: fixed;
@@ -78,7 +80,7 @@ body{
     flex-wrap: wrap;
     background-image: url(assets/header_img.jpg);
     background-size: cover;
-    font-family: 'open_sanssemibold', sans-serif;
+    font-family: 'metropolissemi_bold', sans-serif;
     color: #e1e2e2;
 }
 .profile{
@@ -90,34 +92,28 @@ body{
 .header-img{
     background-image: url(assets/header_img.jpg);
     background-size: cover;
-    font-family: 'open_sanssemibold', sans-serif;
+    font-family: 'metropolissemi_bold', sans-serif;
     color: #e1e2e2;
 }
 .quote{
-    font-family: 'open_sanssemibold', sans-serif;
+    font-family: 'metropolissemi_bold', sans-serif;
     text-align: center;
 }
 .quote-author{
-    font-family: 'OpenSans-Regular-webfont',sans-serif;
+    font-family: 'metropolisregular',sans-serif;
     color: #fb8122;
     text-align: right;
 }
 .main-content{
-    font-family: 'open_sansregular';
+    font-family: 'metropolisregular';
     color: #1d2228;
     text-align: justify;
     text-indent: 60px;
 }
 .heading{
-    font-family: 'open_sanssemibold',sans-serif;
+    font-family: 'metropolissemi_bold',sans-serif;
     color: #1d2228;
     text-align: left;
-}
-.heading-style{
-    padding-left: 20px;
-    border-color: #fb8122;
-    border-width: 0px 0px 0px 3px;
-    border-style: solid;
 }
 .works-container{
     display: flex;
@@ -138,14 +134,14 @@ body{
     transition: 0.4s;
     opacity: 0;
     text-align: justify;
-    font-family: 'opensansregular',sans-serif;
+    font-family: 'metropolisregular',sans-serif;
     bottom: 0;
 }
 .work-element:hover .image-overlay{
     opacity: 1;
 }
 .button{
-    font-family: 'open_sanssemibold',sans-serif;
+    font-family: 'metropolissemi_bold',sans-serif;
     border-radius: 10px;
     color: #e1e2e2;
     background-color: #1d2228;
@@ -155,27 +151,20 @@ body{
     opacity: 80%;
 }
 .main-heading{
-    font-family: 'open_sanssemibold',sans-serif;
+    font-family: 'metropolissemi_bold',sans-serif;
     color: #1d2228;
-    text-transform: uppercase;
     text-align: left;
 }
-.main-heading-style{
-    border-color: #fb8122;
-    border-width: 0px 0px 0px 3px;
-    border-style: solid;
-    padding-left: 20px;
-}
 .sub-heading{
-       font-family: 'open_sanssemibold',sans-serif; 
+       font-family: 'metropolissemi_bold',sans-serif; 
 }
 .content-text{
-    font-family: 'open_sansregular',sans-serif;
+    font-family: 'metropolisregular',sans-serif;
     color: #1d2228;
     text-align: justify;
 }
 .form-content{
-    font-family: 'open_sansregular',sans-serif;
+    font-family: 'metropolisregular',sans-serif;
     text-align: left;
     color: #1d2228;
     background-color: #ececec;
@@ -187,7 +176,7 @@ form{
 }
 textarea{
     color: #1d2228;
-    font-family: 'open_sansregular',sans-serif;
+    font-family: 'metropolisregular',sans-serif;
     resize: none;
     background-color: #e1e2e2;
 }
@@ -215,23 +204,28 @@ input[type=submit]:hover{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-family: 'open_sanssemibold',sans-serif;
+    font-family: 'metropolissemi_bold',sans-serif;
     color: #6b7d94;
     flex-wrap: wrap;
 }
+.footer>div{
+    text-align: center;
+}
 .footer-heading{
     color: #e1e2e2;
+    text-align: center;
 }
 .footer-links-list{
     list-style-type: none;
     line-height: 35px;
     margin-bottom: 0px;
+    padding-left: 0px;
 }
 .footer-contact-links>a{
     display: inline-block;
 }
 .credits{
-    font-family: 'opensans_semibold',sans-serif;
+    font-family: 'metropolisregular',sans-serif;
     text-align: center;
     background-color: #1d2228;
     color: #6b7d94;
@@ -254,10 +248,10 @@ li>a:hover{
 @media print, screen and (min-width: 721px){
     .navbar{
         padding: 20px 40px 20px 40px;
-        font-size: 16pt;
+        font-size: 14pt;
     }
     .logo{
-        height: 30px;
+        height: 20px;
     }
     .about-header{
         font-size: 30pt;
@@ -270,7 +264,6 @@ li>a:hover{
     .header-img{
         font-size: 30pt;
         padding: 100px 100px 70px 100px;
-        margin-bottom: 20px;
     }
     .quote-author{
         font-size: 18pt;
@@ -282,57 +275,56 @@ li>a:hover{
     }
     .main-content{
         width: 70%;
-        padding: 20px;
+        padding: 0px 20px 0px 20px;
         font-size: 16pt;
         line-height: 50px;
     }
     .heading{
         width: 70%;
-        font-size: 22pt;
-        padding: 20px;
+        font-size: 24pt;
+        padding: 40px 20px 20px 20px;
     }
     .works-container{
         flex-flow: row;
         flex-wrap: wrap;
-        padding: 20px 0px 20px 0px;
         width: 90%;
     }
     .overlay-container>img{
         width: 550px;
-        border-radius: 15px;
+        border-radius: 5px;
     }
     .overlay-container>video{
         width: 550px;
-        border-radius: 15px;
+        border-radius: 5px;
     }
     .image-overlay{
         padding: 20px;
         font-size: 14pt;
         width: 100%;
-        border-radius: 0px 0px 15px 15px;
+        border-radius: 0px 0px 5px 5px;
     }
     .work-element{
         padding: 20px;
     }
     .work-element-about{
         width: 600px;
-        padding: 20px;
+        padding: 0px 20px 0px 20px;
     }
     .button{
         padding: 10px 20px 10px 20px;
-        margin-bottom: 30px;
         font-size: 12pt;
+        margin: 20px;
     }
     #about-heading{
         font-size: 22pt;
     }
     .main-heading{
-        font-size: 22pt;
-        padding: 15px;
+        font-size: 24pt;
+        padding: 20px;
     }
     .content-text{
         font-size: 16pt;
-        padding: 15px;
+        padding: 0px 20px 20px 20px;
         line-height: 50px;
     }
     .form-content{
@@ -357,6 +349,7 @@ li>a:hover{
     .footer{
         font-size: 14pt;
         padding: 15px 0px 15px 0px;
+        margin-top: 20px;
     }
     .footer>div{
         padding: 30px;
@@ -366,9 +359,6 @@ li>a:hover{
     }
     .footer-heading{
         font-size: 18pt;
-    }
-    .footer-links-list{
-        padding-left: 20px;
     }
     .footer-contact-links>a>img{
         width: 30px;
@@ -398,13 +388,13 @@ li>a:hover{
         font-size: 13pt;
     }
     .logo{
-        height: 15px;
+        height: 13px;
         vertical-align: middle;
     }
     .about-header{
         font-size: 16pt;
         padding: 30px 10px 30px 10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         background-image: url(assets/header_img.jpg);
     }
     .profile{
@@ -413,7 +403,7 @@ li>a:hover{
     .header-img{
         font-size: 18pt;
         padding: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         background-image: url(assets/header_img.jpg);
     }
     .quote-author{
@@ -426,16 +416,15 @@ li>a:hover{
     }
     .main-content{
         width: 90%;
-        margin-top: 20px;
-        margin-bottom: 20px;
         font-size: 12pt;
         line-height: 30px;
         text-indent: 30px;
+        margin-bottom: 10px;
     }
     .heading{
         width: 90%;
-        font-size: 16pt;
-        padding-top: 10px;
+        font-size: 18pt;
+        padding-top: 20px;
         padding-bottom: 10px;
     }
     .heading-style{
@@ -443,47 +432,41 @@ li>a:hover{
     }
     .works-container{
         flex-flow: column;
-        padding: 10px 0px 10px 0px;
+        margin-bottom: 20px;
     }
     .overlay-container>img{
         width: 100%;
-        border-radius: 10px;
+        border-radius: 5px;
     }
     .overlay-container>video{
         width: 100%;
-        border-radius: 10px;
+        border-radius: 5px;
     }
     .image-overlay{
         padding: 15px;
         font-size: 12pt;
         width: 100%;
-        border-radius: 0px 0px 10px 10px;
+        border-radius: 0px 0px 5px 5px;
     }
     .work-element{
-        padding: 10px;
-    }
-    .work-element-about{
-        padding: 5px 0px 5px 0px;
+        padding: 10px 10px 0px 10px;
     }
     .button{
         padding: 8px 16px 8px 16px;
         font-size: 10pt;
-        margin-bottom: 20px;
+        margin: 10px;
     }
     #about-heading{
         font-size: 12pt;
     }
     .main-heading{
-        font-size: 16pt;
-        padding: 10px 20px 10px 20px;
-    }
-    .main-heading-style{
-        padding-left: 10px;
+        font-size: 18pt;
+        padding: 20px 20px 10px 20px;
     }
     .content-text{
         font-size: 12pt;
         line-height: 30px;
-        padding: 10px 20px 10px 20px;
+        padding: 0px 20px 10px 20px;
     }
     .form-content{
         margin: 10px 0px 10px 0px;
@@ -513,6 +496,7 @@ li>a:hover{
     .footer{
         font-size: 10pt;
         padding: 10px 0px 10px 0px;
+        margin-top: 10px;
     }
     .footer>div{
         padding: 15px;
@@ -525,7 +509,6 @@ li>a:hover{
     }
     .footer-links-list{
         margin-top: 15px;
-        padding-left: 10px;
         line-height: 25px;
     }
     .footer-contact-links>a>img{
