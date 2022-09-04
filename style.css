@@ -74,35 +74,31 @@ body{
     color: #fb8122;
 }
 .about-header{
+    box-sizing: border-box;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    background-image: url(assets/header_img.jpg);
+    background-image: url(assets/header.jpg);
     background-size: cover;
+    background-position: center;
     font-family: 'metropolissemi_bold', sans-serif;
     color: #e1e2e2;
 }
 .profile{
-    border-radius: 100%;
-}
-#about-heading{
-    color: #fb8122;
+    border-radius: 2%;
 }
 .header-img{
-    background-image: url(assets/header_img.jpg);
+    background-image: url(assets/header.jpg);
     background-size: cover;
-    font-family: 'metropolissemi_bold', sans-serif;
     color: #e1e2e2;
 }
-.quote{
-    font-family: 'metropolissemi_bold', sans-serif;
-    text-align: center;
+.header-heading{
+    font-family: 'metropolisbold';
 }
-.quote-author{
-    font-family: 'metropolisregular',sans-serif;
-    color: #fb8122;
-    text-align: right;
+.header-content{
+    font-family: 'metropolissemi_bold';
+    color: #aaaaaa;
 }
 .main-content{
     font-family: 'metropolisregular';
@@ -142,7 +138,7 @@ body{
 }
 .button{
     font-family: 'metropolissemi_bold',sans-serif;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #e1e2e2;
     background-color: #1d2228;
     border-style: none;
@@ -259,19 +255,21 @@ li>a:hover{
         margin-bottom: 20px;
     }
     .profile{
-        width: 150px;
+        box-sizing: border-box;
+        height: 150px;
     }
     .header-img{
-        font-size: 30pt;
         padding: 100px 100px 70px 100px;
+        background-position: center;
     }
-    .quote-author{
-        font-size: 18pt;
-        padding: 20px 0px 20px 0px;
+    .header-heading{
+        font-size: 34pt;
+        margin-top: 30px;
+        margin-bottom: 10px;
     }
     .header-content{
-        font-size: 20pt;
-        padding-top: 30px;
+        font-size: 18pt;
+        padding: 15px 0px 30px 0px;
     }
     .main-content{
         width: 70%;
@@ -291,7 +289,6 @@ li>a:hover{
     }
     .overlay-container>img{
         width: 550px;
-        border-radius: 5px;
     }
     .overlay-container>video{
         width: 550px;
@@ -395,24 +392,23 @@ li>a:hover{
         font-size: 16pt;
         padding: 30px 10px 30px 10px;
         margin-bottom: 10px;
-        background-image: url(assets/header_img.jpg);
     }
     .profile{
-        width: 80px;
+        height: 80px;
     }
     .header-img{
-        font-size: 18pt;
         padding: 30px;
         margin-bottom: 10px;
-        background-image: url(assets/header_img.jpg);
+        background-position: center;
     }
-    .quote-author{
-        font-size: 13pt;
-        padding: 15px 0px 15px 0px;
+    .header-heading{
+        font-size: 20pt;
+        margin-top: 30px;
+        margin-bottom: 10px;
     }
     .header-content{
-        font-size: 13pt;
-        padding-top: 15px;
+        font-size: 11pt;
+        padding: 10px 0px 30px 0px;
     }
     .main-content{
         width: 90%;
@@ -455,9 +451,6 @@ li>a:hover{
         padding: 8px 16px 8px 16px;
         font-size: 10pt;
         margin: 10px;
-    }
-    #about-heading{
-        font-size: 12pt;
     }
     .main-heading{
         font-size: 18pt;
