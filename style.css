@@ -25,9 +25,9 @@ body{
     background-color: #e1e2e2;
 }
 .navbar{
-    color: #e1e2e2;
     font-family: 'metropolissemi_bold', sans-serif;
     background-color: #1d2228;
+    color: #e1e2e2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -35,43 +35,6 @@ body{
     position: sticky;
     top: 0px;
     z-index: 1;
-}
-.sidenav{
-    font-family: 'metropolissemi_bold',sans-serif;
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    background-color: #1d2228;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-.sidenav .close-button{
-    position: absolute;
-    top: 0px;
-    right: 25px;
-    font-size: 24pt;
-    margin-left: 50px;
-}
-.sidenav a{
-    padding: 16px 16px 16px 30px;
-    text-decoration: none;
-    font-size: 16pt;
-    color: #e1e2e2;
-    display: block;
-    transition: 0.2s;
-}
-.selected-nav{
-    border-style: solid;
-    border-width: 0px 0px 0px 2px;
-    border-color: #fb8122;
-    background-color: #181b21;
-}
-.sidenav a:hover{
-    color: #fb8122;
 }
 .about-header{
     box-sizing: border-box;
@@ -142,6 +105,7 @@ body{
     color: #e1e2e2;
     background-color: #1d2228;
     border-style: none;
+    cursor: pointer;
 }
 .button:hover{
     opacity: 80%;
@@ -236,6 +200,9 @@ li>a:hover{
     color: #e1e2e2;
     transition: 0.3s;
 }
+.logo{
+    font-family: 'metropolisbold';
+}
 @media screen and (min-width: 1640px){
     .main-content{
         width: 60%;
@@ -243,11 +210,36 @@ li>a:hover{
 }
 @media print, screen and (min-width: 721px){
     .navbar{
-        padding: 20px 40px 20px 40px;
+        padding: 20px;
         font-size: 14pt;
     }
+    .nav-btn{
+        display: none;
+    }
+    .sidenav{
+        display: none;
+    }
+    .topnav > span >a{
+        padding: 19px;
+    }
+    .topnav > span{
+        padding: 19px 0px 19px 0px;
+    }
+    .topnav > span:hover{
+        background-color: #181b21;
+        cursor: pointer;
+    }
+    .topnav > span >a{
+        text-decoration: none;
+        color: #e1e2e2;
+    }
+    .active{
+        border-style: solid;
+        border-color: #fb8122;
+        border-width: 0px 0px 2px 0px;
+    }
     .logo{
-        height: 20px;
+        margin-left: 20px;
     }
     .about-header{
         font-size: 30pt;
@@ -287,7 +279,7 @@ li>a:hover{
         flex-wrap: wrap;
         width: 90%;
     }
-    .overlay-container>img{
+    .overlay-container>img , .image-view{
         width: 550px;
     }
     .overlay-container>video{
@@ -374,18 +366,51 @@ li>a:hover{
         height: 40px;
         font-size: 11pt;
     }
+    .topnav{
+        display: none;
+    }
     .sidenav{
+        font-family: 'metropolissemi_bold',sans-serif;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        background-color: #1d2228;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
         max-width: 240px;
     }
     .sidenav .close-button{
+        position: absolute;
+        top: 0px;
+        right: 25px;
+        font-size: 24pt;
+        margin-left: 50px;
         font-size: 18pt;
     }
     .sidenav a{
+        padding: 16px 16px 16px 30px;
+        text-decoration: none;
+        font-size: 16pt;
+        color: #e1e2e2;
+        display: block;
+        transition: 0.2s;
         padding: 12px 12px 12px 30px;
         font-size: 13pt;
     }
+    .selected-nav{
+        border-style: solid;
+        border-width: 0px 0px 0px 2px;
+        border-color: #fb8122;
+        background-color: #181b21;
+    }
+    .sidenav a:hover{
+        color: #fb8122;
+    }
     .logo{
-        height: 13px;
         vertical-align: middle;
     }
     .about-header{
@@ -430,7 +455,7 @@ li>a:hover{
         flex-flow: column;
         margin-bottom: 20px;
     }
-    .overlay-container>img{
+    .overlay-container>img , .image-view{
         width: 100%;
         border-radius: 5px;
     }
