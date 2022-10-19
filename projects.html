@@ -14,7 +14,7 @@
           document.getElementById('sidenav_0').style.width = "300px";
         }
     </script>
-  <body>
+  <body id="top">
         <link href="style.css" type="text/css" rel="stylesheet">
         <div class="sidenav" id="sidenav_0">
             <a href="javascript:void(0)" onclick="closeNav();" class="close-button">&times;</a>
@@ -37,10 +37,13 @@
             <center>
             <div style="width:fit-content;"><div class="header-heading">Welcome, to my creative world</div></div>
             <div class="header-content">Get ready to dive into my creations</div>
+            <a href="#graphic_design"><button class="button">Graphic Design</button></a>
+            <a href="#3d_modelling"><button class="button">3D Modelling</button></a>
+            <a href="#video_editing"><button class="button">Video Editing</button></a>
             </center>
           </div>
         <center>
-            <div class="heading">Business Cards</div>
+            <div class="heading" id="graphic_design">Business Cards</div>
             <div class="works-container">
                 <div class="work-element">
                     <div class="overlay-container">
@@ -160,7 +163,22 @@
                     </div>
                 </div>
             </div>
-            <div class="heading">3D Modelling</div>
+            <div class="heading" id="3d_modelling">3D Modelling</div>
+            <div class="works-container">
+                <div class="work-element">
+                    <div class="overlay-container">
+                        <img src="/projects/3d_model_05.jpg">
+                        <div class="image-overlay">Teapot 3D Model</div>
+                    </div>
+                </div>
+                <div class="work-element">
+                    <div class="overlay-container">
+                        <img src="/projects/3d_model_06.jpg">
+                        <div class="image-overlay">Analog Watch 3D Model</div>
+                    </div>
+                </div>
+            </div>
+            <div class="heading">Interior Modelling</div>
             <div class="works-container">
                 <div class="work-element">
                     <div class="overlay-container">
@@ -214,7 +232,7 @@
                     </div>
                 </div>
             </div>
-            <div class="heading"><span class="heading-style">Video Projects</span></div>
+            <div class="heading" id="video_editing">Video Projects</div>
             <div class="works-container">
                 <div class="work-element">
                     <div class="overlay-container">
@@ -226,7 +244,18 @@
                         <iframe class="video" src="https://www.youtube-nocookie.com/embed/QG4HJu0pFWQ" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
+                <div class="work-element">
+                    <div class="overlay-container">
+                        <iframe class="video" src="https://www.youtube-nocookie.com/embed/ihW7YUlbOnQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="work-element">
+                    <div class="overlay-container">
+                        <iframe class="video" src="https://www.youtube-nocookie.com/embed/qhJ_NuIqRMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
+            <a href="#top"><button class="button">Back to Top</button></a>
         </center>
         <div class="footer">
             <div><img src="/assets/logo_footer.png" class="footer-logo"></div>
