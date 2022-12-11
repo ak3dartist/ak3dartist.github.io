@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   sodipodi:docname="background-01.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview15"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.48318963"
+     inkscape:cx="1023.4077"
+     inkscape:cy="477.03838"
+     inkscape:window-width="1920"
+     inkscape:window-height="1013"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#131313;}.cls-2{fill:none;stroke:#414042;stroke-miterlimit:10;stroke-width:2px;opacity:0.3;}</style>
+  </defs>
+  <rect
+     class="cls-1"
+     width="1920"
+     height="1080"
+     id="rect6" />
+  <path
+     id="rect8"
+     style="color:#000000;fill:#414042;stroke-miterlimit:10;-inkscape-stroke:none;opacity:0.3"
+     d="M 1530.9095 289.93284 L 1530.9095 628.47126 L 2309.0806 628.47126 L 2309.0806 628.45745 L 2307.0794 626.45628 L 2307.0794 626.47009 L 1532.9107 626.47009 L 1532.9107 287.93167 L 1530.9095 289.93284 z "
+     transform="translate(731.62 -1287.53) rotate(45)" />
+  <path
+     id="rect10"
+     style="color:#000000;fill:#414042;stroke-miterlimit:10;-inkscape-stroke:none;opacity:0.3"
+     d="M -368.15459 767.93973 L -366.15481 769.93952 L 227.63259 769.93952 L 229.63237 767.93973 L -368.15459 767.93973 z "
+     transform="translate(803.34 374.61) rotate(45)" />
+  <path
+     id="rect12"
+     style="color:#000000;fill:#414042;stroke-miterlimit:10;-inkscape-stroke:none;opacity:0.3"
+     d="M 593.98445 -38.679349 L 767.2118 -38.679349 L 767.2118 -211.9067 L 765.21063 -209.90553 L 765.21063 -40.680516 L 595.98561 -40.680516 L 593.98445 -38.679349 z "
+     transform="translate(-191.73 -392.66) rotate(45)" />
+</svg>

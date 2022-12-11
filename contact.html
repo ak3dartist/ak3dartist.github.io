@@ -1,90 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="/assets/icon_header.png" type="image/icon" rel="icon">
-        <title>Contact - Arun Kumar</title>
-    </head>
-    <script>
-        function closeNav(){
-            document.getElementById('sidenav_0').style.width = "0";
-        }
-        function openNav(){
-            document.getElementById('sidenav_0').style.width = "300px";
-        }
-        function feedbackForm(){
-            var name = document.getElementById('Name').value;
-            var sub = document.getElementById('Subject').value;
-            var com = document.getElementById('Comment').value;
-            if(sub != "" && com != "")
-            {
-                window.open("mailto:s.arunkumar.bu@gmail.com?&subject=Feedback from the Website&body=Name : "+name+"%0ASubject : "+sub+"%0AComment : "+com);
-            }
-            else{
-                alert("Please fill in all the fields");
-            }
-        }
-    </script>
-    <body>
-        <link href="style.css" type="text/css" rel="stylesheet">
-        <div class="sidenav" id="sidenav_0">
-            <a href="javascript:void(0)" onclick="closeNav();" class="close-button">&times;</a>
-            <a href="/index.html">Home</a>
-            <a href="/about.html">About Me</a>
-            <a href="/projects.html">Projects</a>
-            <a class="selected-nav">Contact</a>
-        </div>
-        <div class="navbar">
-            <div class="logo"><span style="color: #fa8021;">Arun</span> Kumar</div>
-            <div class="topnav">
-                <span><a href="/index.html">Home</a></span>
-                <span><a href="/about.html">About Me</a></span>
-                <span><a href="/projects.html">Projects</a></span>
-                <span class="active"><a>Contact</a></span>
-              </div>
-            <span style="font-size: 26px; cursor:pointer" onclick="openNav();" class="nav-btn">&#9776</span>
-        </div>
-        <div class="header-img">
-            <center>
-            <div style="width:fit-content;"><div class="header-heading">Thank You for visiting my website</div></div>
-            <div class="header-content">You can now connect with me</div>
-            </center>
-          </div>
-        <center>
-            <div class="heading"><span class="heading-style">Contact Me</span></div>
-            <div class="contact-container">
-                <div class="form-content">
-                    <form onsubmit="return false">
-                        <div class="form-label">Name :</div>
-                        <center><input type="text" placeholder="Your Name" id="Name" required></center>
-                        <div class="form-label">Subject :</div>
-                        <center><input type="text" placeholder="Subject" id="Subject" required></center>
-                        <div class="form-label">Comment :</div>
-                        <center><textarea placeholder="Body of the Message" rows="5" id="Comment" required></textarea></center>
-                        <center><input type="submit" value="Send" onclick="feedbackForm();"></center>
-                    </form>
-                </div>
-                <div><img src="/assets/contact.svg" style="padding: 15px;" id="contact-img"></div>
-            </div>
-        </center>
-        <div class="footer">
-            <div><img src="/assets/logo_footer.png" class="footer-logo"></div>
-            <div><span class="footer-heading">Links</span>
-              <ul class="footer-links-list">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About Me</a></li>
-                <li><a href="/projects.html">Projects</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-              </ul>
-            </div>
-            <div><span class="footer-heading">Contact</span>
-                <div class="footer-contact-links">
-                    <a href="https://www.linkedin.com/in/arun-kumar-s-90a878224/"><img src="/assets/linked_in_logo.svg"></a>
-                    <a href="mailto:s.arunkumar.bu@gmail.com"><img src="/assets/email_icon.svg"></a>
-                </div>
-            </div>
-          </div>
-          <div class="credits"><a href="https://www.freepik.com/" target="_blank" style="color: #6b7d94;">Mockups designed by Freepik</a></div>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Arun Kumar</title>
+  <link rel="icon" href="/assets/icon.png" type="image/icon">
+</head>
+<script>
+  function closeNav(){
+    document.getElementById('sidenav_0').style.width = "0";
+  }
+  function openNav(){
+    document.getElementById('sidenav_0').style.width = "300px";
+  }
+  function submit(){
+    var name = document.getElementById('name').value;
+    var message = document.getElementById('message').value;
+    if(name != "" && message != ""){
+      window.open("mailto:s.arunkumar.bu@gmail.com?&subject=Feedback from the Website&body=Name: "+name+"%0AMessage: "+message);
+    }
+    else{
+      alert("Please fill in all the fields");
+    }
+  }
+</script>
+<link href="/bootstrap-grid.css" rel="stylesheet" type="text/css">
+<link href="/styles.css" rel="stylesheet" type="text/css">
+<body>
+
+  <div class="container-md">
+    <div class="row">
+      <div class="col-9 uppercase p-4 flex align-center">
+        <img src="/assets/profile.jpg" height="48px" class="rounded">
+        <h3 class="px-3 letter-spacing-md">Arun Kumar S</h3>
+      </div>
+      <div class="col-3 p-4 flex justify-end align-center font-medium"><h3 class="pointer" onclick="openNav();">&#9776</h3></div>
+    </div>
+  </div>
+  
+  <div class="side-nav color-bg-light" id="sidenav_0">
+    <a href="javascript:void(0)" onclick="closeNav();" class="close-button">&times</a>
+    <a href="/index.html">Home</a>
+    <a href="/services.html">Services</a>
+    <a href="/assets/Resume.pdf" target="_blank">Resume</a>
+    <a href="/portfolio.html">Portfolio</a>
+    <a class="color-primary">Contact</a>
+  </div>
+
+  <div class="container-md text-align-center uppercase page-margin">
+    <div>
+      <h3 class="color-secondary letter-spacing-lg margin-b-md font-medium">Get in Touch</h3>
+      <h1 class="font-bold letter-spacing-xl">Contact Me</h1>
+    </div>
+  </div>
+
+  <div class="container-md page-margin-sm">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 p-4">
+        <div class="p-3 border-input rounded-t"><h3>Name :</h3></div>
+        <input type="text" name="name" id="name" placeholder="Your Name" class="width-full p-3 margin-b-lg rounded-b">
+        <div class="p-3 border-input rounded-t"><h3>Message :</h3></div>
+        <textarea name="message" id="message" rows="8" placeholder="Body of the message" class="p-3 margin-b-md width-full rounded-b"></textarea>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="row text-align-center">
+      <div class="col-12">
+        <button onclick="submit();" class="color-secondary p-3 px-4 font-medium uppercase letter-spacing-md margin-b-lg">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-md">
+    <div class="row text-align-center margin-b-lg">
+      <div class="col-md-12">
+        <a href="mailto:s.arunkumar.bu@gmail.com"><img src="/icons/mail.svg" class="icon mx-2"></a>
+        <a href="https://www.linkedin.com/in/arun-kumar-designer" target="_blank"><img src="/icons/linkedin.svg" class="icon mx-2"></a>
+      </div>
+    </div>
+    <div class="row text-align-center margin-b-lg">
+      <div class="col-md-12">
+        <h3 class="uppercase color-secondary letter-spacing-md margin-b-md">get in touch</h3>
+        <h2 class="margin-b-md font-semibold font-size-lg">Contact Me</h2>
+      </div>
+    </div>
+    <div class="row text-align-center margin-b-lg">
+      <div class="col-md-12">
+        <p class="color-secondary margin-b-lg">Thank you for visiting my website. Have a Great Day !</p>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>
