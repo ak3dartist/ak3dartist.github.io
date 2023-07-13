@@ -211,11 +211,24 @@ a{
 }
 .img-zoom-box{
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 .img-zoom-box:hover .img-zoom{
   scale: 1.1;
   transition: 0.3s;
+}
+.sketchfab-embed-wrapper{
+  position:relative;
+  padding-bottom:56.25%;
+  height:0;
+  overflow:hidden;
+}
+.sketchfab-embed-wrapper iframe{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }
 .yt-container {
   position:relative;

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="sketchfab.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.8066406"
+     inkscape:cx="145.04601"
+     inkscape:cy="267.77725"
+     inkscape:window-width="1536"
+     inkscape:window-height="811"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <circle
+     style="fill:#1e1e1e;fill-opacity:1;stroke-width:1.02464"
+     id="path343"
+     cx="256"
+     cy="256"
+     r="232.44553" />
+  <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+  <path
+     d="M 347.43465,296.63762 V 215.36238 A 20.318811,20.318811 0 0 0 337.27524,197.7866 L 266.1594,157.14899 a 20.318811,20.318811 0 0 0 -20.31881,0 l -71.11583,40.63761 a 20.318811,20.318811 0 0 0 -10.15941,17.57578 v 81.27524 a 20.318811,20.318811 0 0 0 10.15941,17.57577 l 71.11583,40.63763 a 20.318811,20.318811 0 0 0 20.31881,0 l 71.11584,-40.63763 a 20.318811,20.318811 0 0 0 10.15941,-17.57577 z"
+     id="path288-8"
+     style="fill:none;stroke:#fa8021;stroke-width:25;stroke-dasharray:none;stroke-opacity:1" />
+  <polyline
+     points="3.27 6.96 12 12.01 20.73 6.96"
+     id="polyline290-9"
+     transform="matrix(10.159405,0,0,10.159405,134.08714,134.08713)"
+     style="fill:none;stroke:#fa8021;stroke-width:2.46077403;stroke-dasharray:none;stroke-opacity:1" />
+  <line
+     x1="256.00009"
+     y1="358.40683"
+     x2="256.00009"
+     y2="255.99982"
+     id="line292-3"
+     style="fill:none;stroke:#fa8021;stroke-width:25;stroke-dasharray:none;stroke-opacity:1" />
+</svg>
