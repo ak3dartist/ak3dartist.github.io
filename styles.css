@@ -93,7 +93,7 @@ html{
 a{
   text-decoration: none;
 }
-*, font-regular{
+*, .font-regular{
   font-family: 'metropolisregular','sans-serif';
 }
 .font-bold{
@@ -235,6 +235,7 @@ a{
   padding-bottom:56.25%;
   height:0;
   overflow:hidden;
+  border-radius: 10px;
 }
 .yt-container iframe, .yt-container object, .yt-container embed {
   position:absolute;
